@@ -19,7 +19,7 @@ This is an eZ Cash payment gateway for WooCommerce.
 
 eZ Cash is a payment gateway that allows you to accept payments online via Dialog, Etisalat and Hutch mobile phones.
 
-To get a eZ Cash merchant account visit their website by clicking [here](http://www.ezcash.lk)
+To get an eZ Cash merchant account visit their website by clicking [here](http://www.ezcash.lk)
 
 Dialog eZ Cash WooCommerce Payment Gateway allows you to accept payments via Dialog, Etisalat and Hutch mobile phones.
 
