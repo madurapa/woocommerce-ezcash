@@ -1,7 +1,7 @@
 <?php
 /*
 	Plugin Name: eZ Cash for Woocommerce
-	Plugin URI: https://github.com/madurapa/woocommerce-ezcash
+	Plugin URI: https://wordpress.org/plugins/dialog-ez-cash-payment-gateway-for-woocommerce
 	Description: Dialog eZ Cash WooCommerce Payment Gateway allows you to accept payments via Dialog, Etisalat and Hutch mobile phones.
 	Version: 1.0.2
 	Author: Maduka Jayalath

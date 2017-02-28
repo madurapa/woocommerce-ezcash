@@ -19,6 +19,10 @@ With this eZ Cash WooCommerce Payment Gateway plugin, you will be able to accept
 
 This plugin is meant to be used by merchants in Sri Lanka.
 
+I have always loved using open source and I believe in giving back to open source as much as I benefit from it.
+
+The intention to make this plugin is to help who is willing to start online business with a low budget so I'm not expecting anything back from you other than feedback, suggestions, features request and rate this plugin.
+
 
 ### Plugin Features
 

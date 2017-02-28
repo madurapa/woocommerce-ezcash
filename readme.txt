@@ -1,6 +1,6 @@
 === Dialog eZ Cash WooCommerce Payment Gateway ===
 Contributors: maduka
-Donate link: http://bosun.me/donate
+Donate link:
 Tags: woocommerce, dialog, payment gateway, payment gateways, mobile wallet, mobile wallets, mobile, mobile money, mobile payment, mobile payments, ewallet, maduka plugins, verve, srilanka, ezcash, lk
 Requires at least: 4.4
 Tested up to: 4.7
@@ -11,18 +11,12 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Dialog eZ Cash WooCommerce Payment Gateway allows you to accept payments via Dialog, Etisalat and Hutch mobile phones.
 
 
-
-
 == Description ==
 
 This is an eZ Cash payment gateway for WooCommerce.
-
 eZ Cash is a payment gateway that allows you to accept payments online via Dialog, Etisalat and Hutch mobile phones.
-
 To get an eZ Cash merchant account visit their website by clicking [here](http://www.ezcash.lk)
-
 Dialog eZ Cash WooCommerce Payment Gateway allows you to accept payments via Dialog, Etisalat and Hutch mobile phones.
-
 With this eZ Cash WooCommerce Payment Gateway plugin, you will be able to accept the following payment methods in your shop:
 
 * __Dialog Mobile Phone__
@@ -32,6 +26,9 @@ With this eZ Cash WooCommerce Payment Gateway plugin, you will be able to accept
 = Note =
 
 This plugin is meant to be used by merchants in Sri Lanka.
+I have always loved using open source and I believe in giving back to open source as much as I benefit from it.
+The intention to make this plugin is to help who is willing to start online business with a low budget so I'm not expecting anything back from you other than feedback, suggestions, features request and rate this plugin.
+
 
 = Plugin Features =
 
@@ -40,9 +37,7 @@ This plugin is meant to be used by merchants in Sri Lanka.
 
 
 = Suggestions / Feature Request =
-
 If you have suggestions or a new feature request, feel free to get in touch with me via GitHub [here](https://github.com/madurapa/woocommerce-ezcash/issues)
-
 You can also follow me on Twitter! **[@MadukaJ](https://twitter.com/MadukaJ)**
 
 
@@ -53,20 +48,21 @@ To contribute to this plugin feel free to fork it on GitHub [Dialog eZ Cash Paym
 == Installation ==
 
 = Automatic Installation =
-* 	Login to your WordPress Admin area
-* 	Go to "Plugins > Add New" from the left hand menu
-* 	In the search box type "Dialog eZ Cash Payment Gateway for WooCommerce"
-*	From the search result you will see "Dialog eZ Cash Payment Gateway for WooCommerce" click on "Install Now" to install the plugin
-*	A popup window will ask you to confirm your wish to install the Plugin.
+* Login to your WordPress Admin area
+* Go to "Plugins > Add New" from the left hand menu
+* In the search box type "Dialog eZ Cash Payment Gateway for WooCommerce"
+* From the search result you will see "Dialog eZ Cash Payment Gateway for WooCommerce" click on "Install Now" to install the plugin
+* A popup window will ask you to confirm your wish to install the Plugin.
 
 = Note: =
 If this is the first time you've installed a WordPress Plugin, you may need to enter the FTP login credential information. If you've installed a Plugin before, it will still have the login information. This information is available through your web server host.
 
 * Click "Proceed" to continue the installation. The resulting installation screen will list the installation as successful or note any problems during the install.
 * If successful, click "Activate Plugin" to activate it.
-* 	Open the settings page for WooCommerce and click the "Payment Gateways," tab.
-* 	Click on the sub tab for "eZ Cash".
-*	Configure your "eZ Cash" settings. See below for details.
+* Open the settings page for WooCommerce and click the "Payment Gateways," tab.
+* Click on the sub tab for "eZ Cash".
+* Configure your "eZ Cash" settings. See below for details.
+
 
 = Manual Installation =
 1. 	Download the plugin zip file
@@ -76,7 +72,6 @@ If this is the first time you've installed a WordPress Plugin, you may need to e
 5. 	Open the settings page for WooCommerce and click the "Payment Gateways," tab.
 6. 	Click on the sub tab for "eZ Cash".
 7.	Configure your "eZ Cash" settings. See below for details.
-
 
 
 = Configure the plugin =
@@ -97,9 +92,6 @@ __*You can select the radio button next to eZ Cash from the list of payment gate
 * Click on __Save Changes__ for the changes you made to be effected.
 
 
-
-
-
 == Frequently Asked Questions ==
 
 = What Do I Need To Use The Plugin =
@@ -108,19 +100,14 @@ __*You can select the radio button next to eZ Cash from the list of payment gate
 2.	You need to open a merchant account on [eZ Cash](http://www.ezcash.lk)
 
 
-
-
 == Changelog ==
 
 = 1.0.2 =
 *   First release
 
 
-
-
 == Upgrade Notice ==
-
-
+No updates with this release
 
 
 == Screenshots ==
