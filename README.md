@@ -103,3 +103,5 @@ _You can select the radio button next to eZ Cash from the list of payment gatewa
 
 __1.0.2__
 *   First release
+__1.0.3__
+*   Added more Sri Lankan rupee codes besides the standard ISO code as some plugins required

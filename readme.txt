@@ -3,7 +3,7 @@ Contributors: maduka
 Donate link:
 Tags: woocommerce, dialog, payment gateway, payment gateways, mobile wallet, mobile wallets, mobile, mobile money, mobile payment, mobile payments, ewallet, maduka plugins, verve, srilanka, ezcash, lk
 Requires at least: 4.4
-Tested up to: 4.7
+Tested up to: 4.8
 Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -104,6 +104,8 @@ __*You can select the radio button next to eZ Cash from the list of payment gate
 
 = 1.0.2 =
 *   First release
+= 1.0.3 =
+*   Added more Sri Lankan rupee codes besides the standard ISO code as some plugins required
 
 
 == Upgrade Notice ==
