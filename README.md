@@ -106,3 +106,7 @@ __1.0.2__
 
 __1.0.3__
 *   Added more Sri Lankan rupee codes besides the standard ISO code as some plugins required
+
+__1.0.4__
+*   Fixed missing PUBLIC and PRIVATE key templates
+*   Tested with latest WordPress and WooCommerce
