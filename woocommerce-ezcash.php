@@ -3,12 +3,14 @@
 	Plugin Name: eZ Cash for Woocommerce
 	Plugin URI: https://wordpress.org/plugins/dialog-ez-cash-payment-gateway-for-woocommerce
 	Description: Dialog eZ Cash WooCommerce Payment Gateway allows you to accept payments via Dialog, Etisalat and Hutch mobile phones.
-	Version: 1.0.4
+	Version: 1.0.5
 	Author: Maduka Jayalath
 	Author URI: https://github.com/madurapa
 	License: GPL-3.0+
  	License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  	GitHub Plugin URI: https://github.com/madurapa/woocommerce-ezcash
+    WC requires at least: 3.1
+    WC tested up to: 4.4
 */
 
 
@@ -227,7 +229,7 @@ function mj_wc_ezcash_init()
                 $order_id = absint(get_query_var('order-pay'));
                 $order = wc_get_order($order_id);
 
-                if ($order->id == $order_id && $order->order_key == $order_key) {
+                if ($order->get_id() == $order_id && $order->get_order_key() == $order_key) {
                     $mcode = $this->merchant_code;
                     $tid = $order_id . '_' . rand();
                     $tamount = $order->order_total;

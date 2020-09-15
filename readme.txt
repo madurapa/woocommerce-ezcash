@@ -3,8 +3,8 @@ Contributors: maduka
 Donate link:
 Tags: woocommerce, dialog, payment gateway, payment gateways, mobile wallet, mobile wallets, mobile, mobile money, mobile payment, mobile payments, ewallet, maduka plugins, verve, srilanka, ezcash, lk
 Requires at least: 4.4
-Tested up to: 5.4.2
-Stable tag: 1.0.4
+Tested up to: 5.5.1
+Stable tag: 1.0.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

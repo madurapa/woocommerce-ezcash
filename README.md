@@ -109,4 +109,8 @@ __1.0.3__
 
 __1.0.4__
 *   Fixed missing PUBLIC and PRIVATE key templates
-*   Tested with latest WordPress and WooCommerce
+*   Tested with the latest WordPress and WooCommerce
+
+__1.0.5__
+*   Fixed a minor bug
+*   Tested with the latest WordPress and WooCommerce
