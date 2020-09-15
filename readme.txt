@@ -5,6 +5,7 @@ Tags: woocommerce, dialog, payment gateway, payment gateways, mobile wallet, mob
 Requires at least: 4.4
 Tested up to: 5.5.1
 Stable tag: 1.0.5
+Requires PHP: 5.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -103,12 +104,23 @@ __*You can select the radio button next to eZ Cash from the list of payment gate
 == Changelog ==
 
 = 1.0.2 =
+
 *   First release
+
 = 1.0.3 =
+
 *   Added more Sri Lankan rupee codes besides the standard ISO code as some plugins required
+
 = 1.0.4 =
+
 *   Fixed missing PUBLIC and PRIVATE key templates
 *   Tested with latest WordPress and WooCommerce
+
+= 1.0.5 =
+Release Date: September 15, 2020
+
+*   Fixed a minor bug
+*   Tested with the latest WordPress and WooCommerce
 
 == Upgrade Notice ==
 No updates with this release
