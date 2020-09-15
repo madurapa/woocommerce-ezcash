@@ -1,7 +1,7 @@
-=== Dialog eZ Cash WooCommerce Payment Gateway ===
+=== Dialog eZ Cash for WooCommerce ===
 Contributors: maduka
 Donate link:
-Tags: woocommerce, dialog, payment gateway, payment gateways, mobile wallet, mobile wallets, mobile, mobile money, mobile payment, mobile payments, ewallet, maduka plugins, verve, srilanka, ezcash, lk
+Tags: ezcash, woocommerce, dialog, payment, srilanka, payment gateway, mobile wallet, mobile wallets, mobile, mobile money, mobile payment, mobile payments, ewallet, maduka plugins, verve, srilanka, lk, ipg, lkr, rs, rupees, etisalat, hutch
 Requires at least: 4.4
 Tested up to: 5.5.1
 Stable tag: 1.0.5
