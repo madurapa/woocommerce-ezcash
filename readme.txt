@@ -118,7 +118,8 @@ gateway._
 
 = Screenshots =
 
-1. eZ Cash WooCommerce Payment Gateway setting page
+1. eZ Cash WooCommerce Payment Gateway setting page  
+![eZ Cash WooCommerce Payment Gateway setting page](.wordpress-org/screenshot-1.png)
 
 2. Test Mode notification, always displayed in the admin backend until when test mode is disabled
 
