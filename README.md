@@ -1,4 +1,5 @@
 ## Dialog eZ Cash payment gateway for Woocommerce
+<!-- only:wp>
 **Contributors:** maduka  
 **Tags:** ezcash, woocommerce, dialog, etisalat, hutch, payment, payment gateway, ipg, mobile payment, emoney, ewallet, lkr, rs, rupees, srilanka   
 **Requires at least:** 4.4  
@@ -7,6 +8,7 @@
 **Stable tag:** 1.0.5  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html 
+</only:wp -->
 
 This is an eZ Cash payment gateway for WooCommerce.
 
