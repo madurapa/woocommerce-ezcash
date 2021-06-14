@@ -1,18 +1,20 @@
 <?php
-/*
-	Plugin Name: eZ Cash for Woocommerce
-	Plugin URI: https://wordpress.org/plugins/dialog-ez-cash-payment-gateway-for-woocommerce
-	Description: Dialog eZ Cash WooCommerce Payment Gateway allows you to accept payments via Dialog, Etisalat and Hutch mobile phones.
-	Version: 1.0.5
-	Author: Maduka Jayalath
-	Author URI: https://github.com/madurapa
-	License: GPL-3.0+
- 	License URI: http://www.gnu.org/licenses/gpl-3.0.txt
- 	GitHub Plugin URI: https://github.com/madurapa/woocommerce-ezcash
-    WC requires at least: 3.1
-    WC tested up to: 4.4
-*/
+/**
+ * Plugin Name: eZ Cash for Woocommerce
+ * Plugin URI: https://wordpress.org/plugins/dialog-ez-cash-payment-gateway-for-woocommerce
+ * Description: Dialog eZ Cash WooCommerce Payment Gateway allows you to accept payments via Dialog, Etisalat and Hutch mobile phones.
+ * Version: 1.0.6
+ * Author: Maduka Jayalath
+ * Author URI: https://github.com/madurapa/woocommerce-ezcash
+ * License: GPL-3.0+
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+ * GitHub Plugin URI: https://github.com/madurapa/woocommerce-ezcash
+ * WC requires at least: 3.1
+ * WC tested up to: 5.4
+ **/
 
+include(plugin_dir_path(__FILE__) . 'includes/phpseclib/Crypt/RSA.php');
+include(plugin_dir_path(__FILE__) . 'includes/phpseclib/Math/BigInteger.php');
 
 if (!defined('ABSPATH'))
     exit;
@@ -65,6 +67,7 @@ function mj_wc_ezcash_init()
             add_action('woocommerce_api_check_ezcash_response', array($this, 'response_page'));
             add_action('woocommerce_receipt_mj_wc_ezcash_gateway', array($this, 'receipt_page'));
             add_action('woocommerce_update_options_payment_gateways_' . $this->id, array($this, 'process_admin_options'));
+            do_action('woocommerce_set_cart_cookies', true);
 
             // Check if the gateway can be used
             if (!$this->is_valid_for_use()) {
@@ -232,12 +235,13 @@ function mj_wc_ezcash_init()
                 if ($order->get_id() == $order_id && $order->get_order_key() == $order_key) {
                     $mcode = $this->merchant_code;
                     $tid = $order_id . '_' . rand();
-                    $tamount = $order->order_total;
+                    $tamount = $order->get_total();;
                     $rurl = $this->notify_url;
                     $sensitiveData = $mcode . '|' . $tid . '|' . $tamount . '|' . $rurl;
-                    $publicKey = $this->public_key;
-                    $publicKey = str_replace(array('-----BEGIN PUBLIC KEY-----', '-----END PUBLIC KEY-----'), '', $publicKey);
-                    $publicKey = '-----BEGIN PUBLIC KEY-----' . $publicKey . '-----END PUBLIC KEY-----';
+                    $rsa = new Crypt_RSA();
+                    $rsa->loadKey($this->public_key);
+                    $rsa->setPublicKey();
+                    $publicKey = $rsa->getPublicKey();
                     $encrypted = '';
 
                     if (!openssl_public_encrypt($sensitiveData, $encrypted, $publicKey))
@@ -245,8 +249,7 @@ function mj_wc_ezcash_init()
 
                     $invoice = base64_encode($encrypted);
 
-                    $html = '';
-                    $html .= '<p>' . __('Thank you for your order, please click the button below to pay with Dialog, Etisalat and Hutch mobile phones using eZ Cash.', 'woothemes') . '</p>';
+                    $html = '<p>' . __('Thank you for your order, please click the button below to pay with Dialog, Etisalat and Hutch mobile phones using eZ Cash.', 'woothemes') . '</p>';
                     $html .= '<div id="mj-wc-ezcash-form">';
                     $html .= '<form id="order_review" method="post" action="https://ipg.dialog.lk/ezCashIPGExtranet/servlet_sentinal">';
                     $html .= '<input type="hidden" value="' . $invoice . '" name="merchantInvoice">';
@@ -268,9 +271,9 @@ function mj_wc_ezcash_init()
         {
             $decrypted = '';
             $encrypted = $_POST['merchantReciept'];
-            $privateKey = $this->private_key;
-            $privateKey = str_replace(array('-----BEGIN PRIVATE KEY-----', '-----END PRIVATE KEY-----'), '', $privateKey);
-            $privateKey = '-----BEGIN PRIVATE KEY-----' . $privateKey . '-----END PRIVATE KEY-----';
+            $rsa = new Crypt_RSA();
+            $rsa->loadKey($this->private_key);
+            $privateKey = $rsa->getPrivateKey();
             $encrypted = base64_decode($encrypted);
 
             if (!openssl_private_decrypt($encrypted, $decrypted, $privateKey)) {
