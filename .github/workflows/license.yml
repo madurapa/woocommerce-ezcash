@@ -1,0 +1,24 @@
+name: Update License
+
+on:
+  push:
+    paths:
+      - 'LICENSE'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+ 
+    - name: Copy License
+      run: cp LICENSE license.txt
+      
+    - name: Push License
+      run: |
+          git config --global user.name 'Maduka Jayalath'
+          git config --global user.email 'madurapa@users.noreply.github.com'
+          git commit -am "Update license.txt"
+          git push
