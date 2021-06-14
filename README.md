@@ -122,12 +122,12 @@ gateway._
 
 1. eZ Cash WooCommerce Payment Gateway setting page  
 <!-- only:github/ -->
-![eZ Cash WooCommerce Payment Gateway setting page](.wordpress-org/screenshot-1.png)
+<img src=".wordpress-org/screenshot-1.png" width="573">
 <!-- /only:github -->
 
 2. Test Mode notification, always displayed in the admin backend until when test mode is disabled
 <!-- only:github/ -->
-![eZ Cash WooCommerce Payment Gateway setting page](.wordpress-org/screenshot-2.png)
+<img src=".wordpress-org/screenshot-2.png" width="573">
 <!-- /only:github -->
 
 3. eZ Cash WooCommerce Payment Gateway method on the checkout page
