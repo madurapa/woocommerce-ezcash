@@ -2,6 +2,7 @@ name: Update License
 
 on:
   push:
+    branches: [ master ]
     paths:
       - 'LICENSE'
 
