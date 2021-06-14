@@ -114,3 +114,8 @@ __1.0.4__
 __1.0.5__
 *   Fixed a minor bug
 *   Tested with the latest WordPress and WooCommerce
+
+__1.0.6__
+Release Date: June 14, 2021
+
+* Readme auto update
