@@ -122,6 +122,12 @@ Release Date: September 15, 2020
 *   Fixed a minor bug
 *   Tested with the latest WordPress and WooCommerce
 
+= 1.0.6 =
+Release Date: June 14, 2021
+
+* Test Readme update
+
+
 == Upgrade Notice ==
 No updates with this release
 
