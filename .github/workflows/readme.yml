@@ -26,5 +26,6 @@ jobs:
       run: |
           git config --global user.name 'Maduka Jayalath'
           git config --global user.email 'madurapa@users.noreply.github.com'
-          git commit -am "Update Readme.txt"
+          git add readme.txt
+          git commit -am "Update readme.txt"
           git push
