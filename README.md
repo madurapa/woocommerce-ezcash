@@ -1,6 +1,6 @@
 ## Dialog eZ Cash payment gateway for Woocommerce
 **Contributors:** maduka  
-**Tags:** ezcash, woocommerce, dialog, payment, srilanka, payment gateway, mobile wallet, mobile wallets, mobile, mobile money, mobile payment, mobile payments, ewallet, maduka plugins, verve, srilanka, lk, ipg, lkr, rs, rupees, etisalat, hutch  
+**Tags:** ezcash, woocommerce, dialog, etisalat, hutch, payment, payment gateway, ipg, mobile payment, emoney, ewallet, lkr, rs, rupees, srilanka   
 **Requires at least:** 4.4  
 **Tested up to:** 5.5.1  
 **Requires PHP:** 5.6  
