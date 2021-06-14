@@ -125,7 +125,7 @@ Release Date: September 15, 2020
 = 1.0.6 =
 Release Date: June 14, 2021
 
-* Test Readme update
+* Readme auto update
 
 
 == Upgrade Notice ==
