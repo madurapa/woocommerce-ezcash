@@ -21,3 +21,8 @@ jobs:
     
     - name: Generate readme
       run: curl -L https://raw.githubusercontent.com/fumikito/wp-readme/master/wp-readme.php | php
+      
+    - name: Push readme
+      run: |
+          git commit -am "Update Readme.txt"
+          git push
