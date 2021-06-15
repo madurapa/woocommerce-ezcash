@@ -5,7 +5,7 @@ Tags: ezcash, woocommerce, dialog, etisalat, hutch, payment, payment gateway, ip
 Requires at least: 4.4
 Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -118,8 +118,14 @@ _You can select the radio button next to eZ Cash from the list of payment gatewa
 
 == Changelog ==
 
-__1.0.6__  
+__1.0.7__  
 Release Date: June 15, 2021
+
+* Fixed Warning and Error messages CSS issue.
+* Set Warning and Error messages only appear if the plugin enabled.
+
+__1.0.6__  
+Release Date: June 14, 2021
 
 * Fixed PUBLIC and PRIVATE keys malformed issue.
 * Fixed not showing notice message when the payment has been failed.
