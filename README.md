@@ -13,7 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Dialog eZ Cash WooCommerce Payment Gateway allows you to accept payments via Dialog, Etisalat, and Hutch mobile phones.
 
-### Description
+## Description
 
 This is an eZ Cash payment gateway for WooCommerce.  
 eZ Cash is a payment gateway that allows you to accept payments online via Dialog, Etisalat, and Hutch mobile phones.  
@@ -118,7 +118,7 @@ gateway._
 1. You need to have the WooCommerce plugin installed and activated on your WordPress site.
 2. You need to open a merchant account on [eZ Cash](http://www.ezcash.lk)
 
-### Screenshots
+## Screenshots
 
 1. eZ Cash WooCommerce Payment Gateway setting page
 
@@ -144,7 +144,7 @@ gateway._
 ![eZ Cash WooCommerce Payment Gateway setting page](.wordpress-org/screenshot-4.png)
 <!-- /only:github -->
 
-### Changelog
+## Changelog
 
 __1.0.6__  
 Release Date: June 15, 2021
@@ -175,6 +175,6 @@ Release Date: February 26, 2017
 
 * First release
 
-### Upgrade Notice
+## Upgrade Notice
 
 No updates with this release
