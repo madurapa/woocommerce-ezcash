@@ -29,6 +29,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ github.event.release.upload_url }}
-        asset_path: ${{github.workspace}}/${{ github.event.repository.name }}.zip
-        asset_name: ${{ github.event.repository.name }}.zip
+        asset_path: ${{github.workspace}}/dialog-ez-cash-payment-gateway-for-woocommerce.zip
+        asset_name: dialog-ez-cash-payment-gateway-for-woocommerce.zip
         asset_content_type: application/zip
