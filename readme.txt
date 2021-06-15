@@ -40,9 +40,7 @@ rate this plugin.
 
 = Issues, Suggestions, Feature Request =
 
-If you have suggestions, features request, report bugs/issues, feel free to use one of
-these [GitHub Issues](https://github.com/madurapa/woocommerce-ezcash/issues)
-or [WordPress Support](https://wordpress.org/support/plugin/dialog-ez-cash-payment-gateway-for-woocommerce/).
+If you have suggestions, features request, report bugs/issues, feel free to use one of these [GitHub Issues](https://github.com/madurapa/woocommerce-ezcash/issues) or [WordPress Support](https://wordpress.org/support/plugin/dialog-ez-cash-payment-gateway-for-woocommerce/).
 
 = Contribute =
 
