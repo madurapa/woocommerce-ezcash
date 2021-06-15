@@ -2,9 +2,13 @@ name: Plugin asset/readme update
 on:
   push:
     branches:
-    - assets
+    - master
+  workflow_run:
+    workflows: ["Update Readme"]
+    types:
+      - completed
 jobs:
-  assets:
+  master:
     name: Push to trunk
     runs-on: ubuntu-latest
     steps:
