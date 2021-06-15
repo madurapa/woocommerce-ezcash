@@ -3,7 +3,7 @@
  * Plugin Name: eZ Cash for Woocommerce
  * Plugin URI: https://wordpress.org/plugins/dialog-ez-cash-payment-gateway-for-woocommerce
  * Description: Dialog eZ Cash WooCommerce Payment Gateway allows you to accept payments via Dialog, Etisalat and Hutch mobile phones.
- * Version: 1.0.6
+ * Version: 1.0.7
  * Author: Maduka Jayalath
  * Author URI: https://github.com/madurapa/woocommerce-ezcash
  * License: GPL-3.0+
@@ -396,6 +396,7 @@ function mj_wc_ezcash_init()
     {
         $ezcash_settings = get_option('woocommerce_mj_wc_ezcash_gateway_settings');
         $test_mode = $ezcash_settings['test_mode'] === 'yes' ? true : false;
+        $is_enable = $ezcash_settings['enabled'] === 'yes' ? true : false;
 
         $public_test_key = $ezcash_settings['public_test_key'];
         $private_test_key = $ezcash_settings['private_test_key'];
@@ -409,15 +410,16 @@ function mj_wc_ezcash_init()
         $public_key = $test_mode ? $public_test_key : $public_live_key;
         $private_key = $test_mode ? $private_test_key : $private_live_key;
 
-        if ($test_mode) {
-            echo '<div class="update-nag"> eZ Cash Test Mode is still enabled. Click <a href="' . get_bloginfo('wpurl') . '/wp-admin/admin.php?page=wc-settings&tab=checkout&section=wc_mj_ezcash_gateway">here</a> to disable it when you want to start accepting live payment on your site.</div>';
-        }
+        if ($is_enable) {
+            if ($test_mode) {
+                echo '<div class="notice notice-warning"><p>eZ Cash Test Mode is still enabled. Click <a href="' . get_bloginfo('wpurl') . '/wp-admin/admin.php?page=wc-settings&tab=checkout&section=wc_mj_ezcash_gateway">here</a> to disable it when you want to start accepting live payment on your site.</p></div>';
+            }
 
-        // Check required fields
-        if (!($public_key && $private_key && $merchant_code && $request_url)) {
-            echo '<div class="error"><p>' . sprintf('Please enter your eZ Cash keys, Request URL and the Merchant Code <a href="%s">here</a> to be able to use the eZ Cash WooCommerce plugin.', admin_url('admin.php?page=wc-settings&tab=checkout&section=mj_wc_ezcash_gateway')) . '</p></div>';
+            // Check required fields
+            if (!($public_key && $private_key && $merchant_code && $request_url)) {
+                echo '<div class="notice notice-error"><p>' . sprintf('Please enter your eZ Cash keys, Request URL and the Merchant Code <a href="%s">here</a> to be able to use the eZ Cash WooCommerce plugin.', admin_url('admin.php?page=wc-settings&tab=checkout&section=mj_wc_ezcash_gateway')) . '</p></div>';
+            }
         }
-
     }
 
     add_action('admin_notices', 'mj_wc_ezcash_test_mode_notice');
