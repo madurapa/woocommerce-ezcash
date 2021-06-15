@@ -47,7 +47,7 @@ To contribute to this plugin feel free to fork on [GitHub](https://github.com/ma
 
 == Installation ==
 
- Automatic Installation 
+= Automatic Installation =
 
 * Login to your WordPress Admin area
 * Go to "Plugins > Add New" from the left menu
@@ -56,7 +56,7 @@ To contribute to this plugin feel free to fork on [GitHub](https://github.com/ma
   the plugin
 * A popup window will ask you to confirm your wish to install the Plugin.
 
- Note: 
+= Note: =
 
 If this is the first time you've installed a WordPress Plugin, you may need to enter the FTP login credential
 information. If you've installed a Plugin before, it will still have the login information. This information is
@@ -69,7 +69,7 @@ available through your web server host.
 * Click on the sub-tab for "eZ Cash".
 * Configure your "eZ Cash" settings. See below for details.
 
- Manual Installation 
+= Manual Installation =
 
 1. Download the plugin zip file
 2. log in to your WordPress Admin. Click on "Plugins > Add New" from the left menu.
@@ -80,7 +80,7 @@ available through your web server host.
 6. Click on the sub-tab for "eZ Cash".
 7. Configure your "eZ Cash" settings. See below for details.
 
- Configure the plugin 
+= Configure the plugin =
 
 To configure the plugin, go to __WooCommerce > Settings__ from the left menu, then click "Payment Gateways" from the top
 tab. You should see __"eZ Cash"__ as an option at the top of the screen. Click on it to configure the payment gateway.
