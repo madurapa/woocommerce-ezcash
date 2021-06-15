@@ -50,7 +50,7 @@ or [WordPress Support](https://wordpress.org/support/plugin/dialog-ez-cash-payme
 
 To contribute to this plugin feel free to fork on [GitHub](https://github.com/madurapa/woocommerce-ezcash).
 
-### Installation
+## Installation
 
 #### Automatic Installation
 
@@ -111,7 +111,7 @@ gateway._
 * __Test Mode__  - tick to enable test mode.
 * Click on __Save Changes__ for the changes you made to be affected.
 
-### Frequently Asked Questions
+## Frequently Asked Questions
 
 #### What Do I Need To Use The Plugin
 
