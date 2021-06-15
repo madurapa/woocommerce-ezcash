@@ -31,8 +31,7 @@ shop:
 
 This plugin meant to be used by merchants in Sri Lanka.  
 I have always loved using open source, and I believe in giving back to open source as much as I benefit from it.  
-The intention to make this plugin is to help those who are willing to start an online business with a low budget so I'm
-not expecting anything back from you other than feedback, suggestions, features requests, reporting bugs/issues, and
+The intention to make this plugin is to help those who are willing to start an online business with a low budget, so I'm expecting nothing but any feedbacks, suggestions, feature requests, reporting bugs/issues, and
 rate this plugin.
 
 ### Plugin Features
