@@ -104,11 +104,11 @@ _You can select the radio button next to eZ Cash from the list of payment gatewa
 
 
 
-2. Test Mode notification, always displayed in the admin backend until when test mode disabled
+2. Test Mode notification will always be displayed in the admin backend until when test mode disabled
 
 
 
-3. eZ Cash WooCommerce Payment Gateway method on the checkout page
+3. eZ Cash WooCommerce Payment method on the checkout page
 
 
 
