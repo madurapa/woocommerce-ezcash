@@ -3,9 +3,9 @@
 Contributors: maduka
 Tags: ezcash, woocommerce, dialog, etisalat, hutch, payment, payment gateway, ipg, mobile payment, emoney, ewallet, lkr, rs, rupees, srilanka
 Requires at least: 4.4
-Tested up to: 5.5.1
+Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -118,40 +118,51 @@ gateway._
 
 = Screenshots =
 
-1. eZ Cash WooCommerce Payment Gateway setting page  
+1. eZ Cash WooCommerce Payment Gateway setting page
 
 
-2. Test Mode notification, always displayed in the admin backend until when test mode is disabled
+
+2. Test Mode notification, always displayed in the admin backend until when test mode disabled
+
 
 
 3. eZ Cash WooCommerce Payment Gateway method on the checkout page
 
 
+
 4. Successful Transaction page
+
 
 
 = Changelog =
 
 __1.0.6__  
-Release Date: June 14, 2021
-* Readme auto-update
+Release Date: June 15, 2021
+
+* Fixed PUBLIC and PRIVATE keys malformed issue.
+* Fixed not showing notice message when the payment has been failed.
+* Fixed get total order amount method.
 
 __1.0.5__  
 Release Date: September 15, 2020
+
 * Fixed a minor bug
 * Tested with the latest WordPress and WooCommerce
 
 __1.0.4__  
 Release Date: June 21, 2020
+
 * Fixed missing PUBLIC and PRIVATE key templates
 * Tested with the latest WordPress and WooCommerce
 
 __1.0.3__  
 Release Date: June 01, 2017
+
 * Added more Sri Lankan rupee codes besides the standard ISO code as some plugins required
 
 __1.0.2__  
 Release Date: February 26, 2017
+
 * First release
 
 = Upgrade Notice =
