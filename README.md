@@ -108,13 +108,13 @@ _You can select the radio button next to eZ Cash from the list of payment gatewa
 <img alt="eZ Cash WooCommerce Payment Gateway setting page" src=".wordpress-org/screenshot-1.png" width="573">
 <!-- /only:github -->
 
-2. Test Mode notification, always displayed in the admin backend until when test mode disabled
+2. Test Mode notification will always be displayed in the admin backend until when test mode disabled
 
 <!-- only:github/ -->
 <img alt="Test Mode notification, always displayed in the admin backend until when test mode disabled" src=".wordpress-org/screenshot-2.png" width="573">
 <!-- /only:github -->
 
-3. eZ Cash WooCommerce Payment Gateway method on the checkout page
+3. eZ Cash WooCommerce Payment method on the checkout page
 
 <!-- only:github/ -->
 ![eZ Cash WooCommerce Payment Gateway setting page](.wordpress-org/screenshot-3.png)
